@@ -40,7 +40,7 @@ pipeline {
             steps {
                 script {
                     dockerImage.inside("--entrypoint=''") { 
-                        sh 'python lanzamiento_dados.py --name "Test"'
+                        sh 'python lanzamiento_dados.py 5 6'
                     }
                 }
             }
