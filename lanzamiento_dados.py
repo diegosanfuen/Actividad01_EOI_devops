@@ -10,7 +10,7 @@ def main():
     :return: None
     """
     if len(sys.argv) != 3:
-        print("Error: Se requieren exactamente dos argumentos.")
+        print("Error: Se requieren exactamente dos argumentos. ")
         print("Uso: python lanzamiento_dados.py <ammount> <sides>")
         sys.exit(1)
 
