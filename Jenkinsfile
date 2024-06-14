@@ -39,8 +39,8 @@ pipeline {
         stage('Probamos la imagen') {
             steps {
                 script {
-                    dockerImage.inside {
-                        sh 'python lanzamiento_dados.py --entrypoint=""'
+                    dockerImage.inside("--entrypoint=''") { 
+                        sh 'python lanzamiento_dados.py ---name "Test"'
                     }
                 }
             }
