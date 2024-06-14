@@ -20,7 +20,7 @@ pipeline {
 		// 2.	Checkout del código de nuestro repositorio.
         stage('Checkout Code') {
             steps {
-                git branch: 'main', url: 'https://github.com/diegosanfuen/Actividad01_EOI_devops.git'
+                git branch: 'master', url: 'https://github.com/diegosanfuen/Actividad01_EOI_devops.git'
             }
         }
 		
